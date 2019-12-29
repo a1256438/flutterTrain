@@ -11,8 +11,8 @@ import 'package:flutter/material.dart';
       return Scaffold(
         // backgroundColor: Colors.deepOrange,
         appBar: AppBar(
-          title: Text("View Profile"),
-          backgroundColor: Colors.red,
+          title: Text("使用者頁面"),
+          backgroundColor: Colors.blue,
           elevation: 0,
         ),
         body: ListView(
@@ -45,7 +45,9 @@ import 'package:flutter/material.dart';
                         minRadius: 60,
                         backgroundColor: Colors.deepOrange.shade300,
                         child: CircleAvatar(
-//                          backgroundImage: CachedNetworkImageProvider(images[0]),
+                          backgroundImage:
+                          NetworkImage('https://wowlavie-aws.hmgcdn.com/file/article_all/source/A1486541280.jpg'),
+                          backgroundColor: Colors.red,
                           minRadius: 50,
 
                         ),
@@ -57,8 +59,8 @@ import 'package:flutter/material.dart';
                     ],
                   ),
                   SizedBox(height: 10,),
-                  Text("Ram Kumar", style: TextStyle(fontSize: 22.0, color: Colors.white),),
-                  Text("Kathmandu, Nepal", style: TextStyle(fontSize: 14.0, color: Colors.red.shade700),)
+                  Text("Rex", style: TextStyle(fontSize: 22.0, color: Colors.white),),
+                  Text("台灣, New TaipeiCity", style: TextStyle(fontSize: 14.0, color: Colors.white),)
                 ],
               ),
             ),
@@ -70,7 +72,7 @@ import 'package:flutter/material.dart';
                     child: Container(
                       color: Colors.deepOrange.shade300,
                       child: ListTile(
-                        title: Text("50895",textAlign: TextAlign.center, style: TextStyle(
+                        title: Text("1",textAlign: TextAlign.center, style: TextStyle(
                           color: Colors.white, fontWeight: FontWeight.bold, fontSize: 24.0
                         ),),
                         subtitle: Text("FOLLOWERS", textAlign: TextAlign.center, style: TextStyle(color: Colors.red),),
@@ -81,10 +83,14 @@ import 'package:flutter/material.dart';
                     child: Container(
                       color: Colors.red,
                       child: ListTile(
-                        title: Text("34524",textAlign: TextAlign.center, style: TextStyle(
+                        title: Text("0",textAlign: TextAlign.center, style: TextStyle(
                           color: Colors.white, fontWeight: FontWeight.bold, fontSize: 24.0
                         ),),
+
                         subtitle: Text("FOLLOWING", textAlign: TextAlign.center, style: TextStyle(color: Colors.white70),),
+                      onTap: () {
+                          
+                      }
                       ),
                     ),
                   ),
@@ -93,22 +99,22 @@ import 'package:flutter/material.dart';
             ),
             ListTile(
               title: Text("Email", style: TextStyle(color: Colors.deepOrange, fontSize: 12.0),),
-              subtitle: Text("ram@kumar.com", style: TextStyle(fontSize: 18.0),),
+              subtitle: Text("rex@eupfin.com", style: TextStyle(fontSize: 18.0),),
             ),
             Divider(),
             ListTile(
               title: Text("Phone", style: TextStyle(color: Colors.deepOrange, fontSize: 12.0),),
-              subtitle: Text("+977 9818225533", style: TextStyle(fontSize: 18.0),),
+              subtitle: Text("自己猜", style: TextStyle(fontSize: 18.0),),
             ),
             Divider(),
             ListTile(
               title: Text("Twitter", style: TextStyle(color: Colors.deepOrange, fontSize: 12.0),),
-              subtitle: Text("@ramkumar", style: TextStyle(fontSize: 18.0),),
+              subtitle: Text("自己猜", style: TextStyle(fontSize: 18.0),),
             ),
             Divider(),
             ListTile(
               title: Text("Facebook", style: TextStyle(color: Colors.deepOrange, fontSize: 12.0),),
-              subtitle: Text("facebook.com/ramkumar", style: TextStyle(fontSize: 18.0),),
+              subtitle: Text("自己猜", style: TextStyle(fontSize: 18.0),),
             ),
             Divider(),
           ],
